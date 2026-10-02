@@ -17,17 +17,34 @@
     <h2>Get in touch</h2>
     <p>Questions about the herd, volunteering, or how to help? We would love to hear from you.</p>
 
-    <!-- ============================================================
-         BUILD YOUR FORM HERE.
+    
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
 
-         Everything above and below this comment is already written.
-         Work from the field list in the brief.
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="phone">Phone(optional)</label>
+    <input type="text" id="phone" name="phone">
 
-         Do not worry about making the form work on a server. Use
-         submit.html as the destination and send the data the secure
-         way (the way that keeps it out of the address bar).
-         ============================================================ -->
+    <label for="selection"></label>
+    <select name="element" id="selection">
+      <option value="">--Choose an option--</option>
+      <option value="volunteering">Volunteering</option>
+      <option value="goods">Donating goods</option>
+      <option value="funds">Donating funds</option>
+      <option value="campaign">Joining a fundraiser campaign</option>
+      <option value="event">Leading a third-party event</option>
+      <option value="general">General question</option>
+    </select>
+    
+    <label for="reply">How do we reply?</label>
+    <input type="radio" id="reply" name="reply">
 
+    <label for="message">Your message</label>
+    <textarea name="message" id="message" required></textarea>
+    <label for="">Yes, send me news about the herd</label>
+    <input type="checkbox">
 
 
     <!-- ============================================================
